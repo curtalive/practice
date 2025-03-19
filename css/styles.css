@@ -156,32 +156,6 @@ header .icons i:hover {
     color: #007bff;
 }
 
-/* Адаптивность */
-@media (max-width: 768px) {
-    .header-container {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-
-    .search-bar {
-        width: 100%;
-    }
-
-    .search-bar .search-form {
-        max-width: 100%;
-    }
-
-    header nav ul {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-}
-
-
-
-
 /* Общие стили футера */
 footer {
     background-color: #f8f8f8;
@@ -375,3 +349,152 @@ form .toggle-link a:hover {
     text-decoration: underline;
 }
 
+/* --- Слайдер --- */
+.slider {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.slider h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.slide {
+    min-width: 300px;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 0 10px;
+}
+
+.slide img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.slide p {
+    margin: 10px 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.slide a {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+
+.slide a:hover {
+    background-color: #0056b3;
+}
+
+/* Кнопки слайдера */
+.slider-container button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 10px;
+    transition: background 0.3s;
+}
+
+.slider-container button:hover {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+/* --- Форма авторизации --- */
+.auth-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.auth-section h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.auth-section form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.auth-section input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.auth-section button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.auth-section button:hover {
+    background-color: #0056b3;
+}
+/* --- Адаптивность --- */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .search-bar {
+        width: 100%;
+    }
+    
+    .search-bar .search-form {
+        max-width: 100%;
+    }
+    
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .slider-container {
+        flex-direction: column;
+    }
+}
