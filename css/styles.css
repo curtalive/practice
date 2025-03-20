@@ -162,6 +162,7 @@ footer {
     color: #333;
     border-top: 1px solid #ddd;
     margin-top: 40px;
+    padding: 20px;
 }
 
 /* Контейнер футера */
@@ -382,7 +383,7 @@ form .toggle-link a:hover {
 .slide img {
     width: 100%;
     max-width: 200px;
-    height: auto;
+    max-height: 200px;
     border-radius: 8px;
 }
 
@@ -472,6 +473,36 @@ form .toggle-link a:hover {
 .auth-section button:hover {
     background-color: #0056b3;
 }
+
+/* --- Блок "О нас" --- */
+.about {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.about h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.about-content img {
+    max-width: 100px;
+    max-height: 150px;
+    border-radius: 8px;
+}
+
+.about-content p {
+    max-width: 600px;
+    text-align: justify;
+}
+
 /* --- Адаптивность --- */
 @media (max-width: 768px) {
     .header-container {

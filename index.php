@@ -15,12 +15,12 @@
             <h2>Популярные товары</h2>
             <div class="slider-container">
                 <div class="slide">
-                    <img src="images/tshirt_white.jpg" alt="Белая футболка">
+                    <img src="creative/tshirt_white.jpg" alt="Белая футболка">
                     <p>Белая футболка - 1230 ₽</p>
                     <a href="products.php">Подробнее</a>
                 </div>
                 <div class="slide">
-                    <img src="images/jeans_blue.jpg" alt="Синие джинсы">
+                    <img src="creative/jeans_blue.jpg" alt="Синие джинсы">
                     <p>Синие джинсы - 4340 ₽</p>
                     <a href="products.php">Подробнее</a>
                 </div>
@@ -40,9 +40,24 @@
             <p>Нет аккаунта? <a href="views/register.php">Зарегистрируйтесь</a></p>
             <a href="# ">Забыли пароль?</a>
         </section>
-        <?php include('views/footer.php'); ?>
 
-        <!-- Тут будет JS для слайдера -->
+
+        <section class="about">
+            <h2>О нас</h2>
+            <div class="about-content">
+                <img src="creative/hands.png" alt="О компании">
+                <p>
+                    <?php 
+                        $aboutText = file_get_contents("media/text/about.txt");
+                        echo nl2br(htmlspecialchars($aboutText));
+                    ?>
+                </p>
+            </div>
+        </section>
+
+        <?php include('views/footer.php'); ?>
+        
+        <script src="js/script.js"></script>
 </body>
 
 
