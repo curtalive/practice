@@ -9,7 +9,7 @@
                 <li><a href="#">Политика конфиденциальности</a></li>
             </ul>
         </div>
-    
+     
         <div class="footer-section">
             <h3>Быстрая навигация</h3>
             <ul>

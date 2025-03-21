@@ -21,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if (mysqli_query($conn, $query)) {
         echo "Регистрация прошла успешно.";
     } else {
-        echo "Ошибка регистрации: " . mysqli_error($conn);
+        echo "Ошибка регистрации: " . mysqli_error($conn); 
     }
 }
 

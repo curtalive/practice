@@ -27,7 +27,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         echo "Неверные данные для входа.";
     }
 }
-
+ 
 mysqli_close($conn);
 ?>
 <head>
