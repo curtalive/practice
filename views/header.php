@@ -18,7 +18,7 @@ session_start(); // Запускаем сессию
 <header>
     <div class="header-container">
         <!-- Название/Логотип в будущем -->
-        <a href="index.php" class="logo">Loomix</a>
+        <a href="../index.php" class="logo">Loomix</a>
 
         <!-- Поиск -->
         <div class="search-bar">
@@ -38,7 +38,7 @@ session_start(); // Запускаем сессию
                     <a href="
                         <?php 
                         if (!isset($_SESSION['user_id'])) {
-                            echo 'login.php'; // Гость → авторизация
+                            echo 'views/login.php'; // Гость → авторизация
                         } elseif ($_SESSION['role'] == 'admin') {
                             echo 'admin/dashboard.php'; // Админ → админка
                         } else {
@@ -55,12 +55,12 @@ session_start(); // Запускаем сессию
                     </div>
                 </li>
                 <li><a href="index.php">Главная</a></li>
-                <li><a href="catalog.php">Каталог</a></li>
-                <li><a href="about.php">О нас</a></li>
-                <li><a href="contact.php">Контакты</a></li>
+                <li><a href="views/catalog.php">Каталог</a></li>
+                <li><a href="views/about.php">О нас</a></li>
+                <li><a href="views/contact.php">Контакты</a></li>
                 <!-- Кнопка выхода -->
                 <?php if (isset($_SESSION['user_id'])): ?>
-                    <li><a href="logout.php">Выйти</a></li>
+                    <li><a href="views/logout.php">Выйти</a></li>
                 <?php endif; ?>
             </ul>
         </nav>

@@ -427,11 +427,11 @@ form .toggle-link a:hover {
 }
 
 .prev {
-    left: 0;
+    left: 43%;
 }
 
 .next {
-    right: 0;
+    right: 43%;
 }
 
 /* --- Форма авторизации --- */
@@ -528,4 +528,16 @@ form .toggle-link a:hover {
     .slider-container {
         flex-direction: column;
     }
+}
+
+/* Чекбокс согласия */
+.checkbox {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.checkbox input {
+    margin-right: 5px;
 }
