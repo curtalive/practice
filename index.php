@@ -55,6 +55,22 @@
             </div>
         </section>
 
+        <section class="reviews">
+            <h2>Отзывы клиентов</h2>
+            <div class="review-container">
+                <div class="review">
+                    <img src="creative/review.png" alt="Клиент 1">
+                    <p>"Отличный магазин! Быстрая доставка!"</p>
+                    <span>- Алексей, 12.03.2025</span>
+                </div>
+                <div class="review">
+                    <img src="creative/review.png" alt="Клиент 2">
+                    <p>"Качественные вещи, рекомендую!"</p>
+                    <span>- Мария, 15.03.2025</span>
+                </div>
+            </div>
+        </section>
+    </main>
         <?php include('views/footer.php'); ?>
         
         <script src="js/script.js"></script>

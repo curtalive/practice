@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
+    // --- Слайдер товаров ---
     const slides = document.querySelectorAll(".slide");
     const prevBtn = document.querySelector(".prev");
     const nextBtn = document.querySelector(".next");
@@ -21,11 +22,28 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     showSlide(currentIndex); 
-    
+
+    // --- Автоматическое перелистывание слайдов ---
     setInterval(() => {
         currentIndex = (currentIndex + 1) % slides.length;
         showSlide(currentIndex);
     }, 5000);
 
+    // --- Слайдер отзывов ---
+    const reviews = document.querySelectorAll(".review");
+    let reviewIndex = 0;
+
+    function showReview(index) {
+        reviews.forEach((review, i) => {
+            review.style.display = i === index ? "block" : "none";
+        });
+    }
+
+    function nextReview() {
+        reviewIndex = (reviewIndex + 1) % reviews.length;
+        showReview(reviewIndex);
+    }
+
+    showReview(reviewIndex);
+    setInterval(nextReview, 4000); 
 });
- 

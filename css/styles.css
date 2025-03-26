@@ -541,3 +541,45 @@ form .toggle-link a:hover {
 .checkbox input {
     margin-right: 5px;
 }
+
+/* --- Отзывы --- */
+.reviews {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.reviews h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.review-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.review {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+}
+
+.review img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.review p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.review span {
+    font-size: 12px;
+    color: #666;
+}
