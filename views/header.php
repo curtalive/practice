@@ -51,11 +51,11 @@ session_start(); // Запускаем сессию
                 </li>
                 <li>
                     <div class="icons">
-                        <a href="cart.php"><i class="fas fa-shopping-cart"></i></a>
+                        <a href="views/cart.php"><i class="fas fa-shopping-cart"></i></a>
                     </div>
                 </li>
                 <li><a href="index.php">Главная</a></li>
-                <li><a href="views/catalog.php">Каталог</a></li>
+                <li><a href="views/products.php">Каталог</a></li>
                 <li><a href="views/about.php">О нас</a></li>
                 <li><a href="views/contact.php">Контакты</a></li>
                 <!-- Кнопка выхода -->

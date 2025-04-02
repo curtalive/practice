@@ -530,6 +530,85 @@ form .toggle-link a:hover {
     }
 }
 
+/* Стили для страницы корзины */
+.cart-container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cart-container h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.cart-container table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #f9f9f9;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.cart-container th, .cart-container td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+.cart-container th {
+    background: #ececec;
+    font-weight: bold;
+}
+
+.cart-container td img {
+    width: 60px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.cart-container button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.cart-container .remove-btn {
+    background: #ff4d4d;
+    color: white;
+}
+
+.cart-container .remove-btn:hover {
+    background: #cc0000;
+}
+
+.cart-container form[action="checkout.php"] button {
+    width: 100%;
+    background: #4CAF50;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.cart-container form[action="checkout.php"] button:hover {
+    background: #45a049;
+}
+
+.cart-container p {
+    text-align: center;
+    font-size: 18px;
+    color: #777;
+}
+
 /* Чекбокс согласия */
 .checkbox {
     display: flex;
@@ -582,4 +661,74 @@ form .toggle-link a:hover {
 .review span {
     font-size: 12px;
     color: #666;
+}
+
+/* Стилистраницы товаров */
+.products-page {
+    padding: 20px;
+}
+
+.products-page .products-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    overflow-x: auto;
+}
+
+.products-page .product-card {
+    flex: 0 0 calc(25% - 20px);
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    min-width: 250px;
+}
+
+.products-page .product-card:hover {
+    transform: scale(1.05);
+}
+
+.products-page .product-card img {
+    width: 300px;
+    height: 300px;
+    border-radius: 8px;
+}
+
+.products-page .product-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.products-page .price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #27ae60;
+}
+
+.products-page .category {
+    font-size: 14px;
+    color: #777;
+}
+
+.products-page .btn, 
+.products-page button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 12px;
+    background: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.products-page .btn:hover, 
+.products-page button:hover {
+    background: #0056b3;
 }
