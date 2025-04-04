@@ -42,7 +42,7 @@ session_start(); // Запускаем сессию
                         } elseif ($_SESSION['role'] == 'admin') {
                             echo 'admin/dashboard.php'; // Админ → админка
                         } else {
-                            echo 'profile.php'; // Обычный пользователь → профиль
+                            echo 'views/account.php'; // Обычный пользователь → профиль
                         }
                         ?>
                     ">
