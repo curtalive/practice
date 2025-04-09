@@ -21,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         if ($_SESSION['role'] == 'admin') {
             header('Location: ../admin/dashboard.php');  // Для администратора
         } else {
-            header('Location: profile.php');   // Для обычного пользователя
+            header('Location: account.php');   // Для обычного пользователя
         }
     } else {
         echo "Неверные данные для входа.";

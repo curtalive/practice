@@ -1,4 +1,7 @@
-<?php include('views/header.php'); ?>
+<?php 
+session_start();
+include('views/header.php'); 
+?>
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -29,7 +32,7 @@
             </div>
         </section>
 
-
+        <?php if (!isset($_SESSION['user_id'])): ?>
         <section class="auth-section">
             <h2>Вход в аккаунт</h2>
             <form action="views/login.php" method="POST">
@@ -38,9 +41,9 @@
                 <button type="submit">Войти</button>
             </form>
             <p>Нет аккаунта? <a href="views/register.php">Зарегистрируйтесь</a></p>
-            <a href="# ">Забыли пароль?</a>
+            <a href="#">Забыли пароль?</a>
         </section>
-
+        <?php endif; ?>
 
         <section class="about">
             <h2>О нас</h2>
@@ -71,9 +74,8 @@
             </div>
         </section>
     </main>
-        <?php include('views/footer.php'); ?>
-        
-        <script src="js/script.js"></script>
-</body>
- 
 
+    <?php include('views/footer.php'); ?>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -503,33 +503,6 @@ form .toggle-link a:hover {
     text-align: justify;
 }
 
-/* --- Адаптивность --- */
-@media (max-width: 768px) {
-    .header-container {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-    
-    .search-bar {
-        width: 100%;
-    }
-    
-    .search-bar .search-form {
-        max-width: 100%;
-    }
-    
-    header nav ul {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-
-    .slider-container {
-        flex-direction: column;
-    }
-}
-
 /* Стили для страницы корзины */
 .cart-container {
     max-width: 900px;
@@ -788,4 +761,132 @@ form .toggle-link a:hover {
 
 .logout-btn:hover {
     background: #cc0000;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+
+    /* Шапка */
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 0;
+    }
+
+    .search-bar .search-form {
+        max-width: 90%;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .header nav ul li a {
+        font-size: 14px;
+    }
+
+    /* Слайдер */
+    .slider-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .slide {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    .prev, .next {
+        display: none; /* скрываем стрелки на мобильных */
+    }
+
+    /* Отзывы */
+    .review-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .review {
+        width: 90%;
+    }
+
+    /* О нас */
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-content img {
+        margin-bottom: 15px;
+    }
+
+    /* Каталог товаров */
+    .products-page .products-grid {
+        justify-content: center;
+    }
+
+    .products-page .product-card {
+        flex: 0 0 90%;
+        max-width: 300px;
+    }
+
+    .products-page .product-card img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Авторизация / Регистрация */
+    .auth-section form,
+    form.login {
+        width: 90%;
+    }
+
+    /* Профиль */
+    .profile-container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .order-history th, .order-history td {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    /* Корзина */
+    .cart-container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .cart-container table {
+        font-size: 14px;
+    }
+
+    .cart-container th, .cart-container td {
+        padding: 8px;
+    }
+
+    .cart-container td img {
+        width: 40px;
+    }
+
+    .cart-container form[action="checkout.php"] button {
+        font-size: 14px;
+    }
+
+    /* Футер */
+    footer .footer-container {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 10px;
+    }
+
+    footer .footer-container .footer-section {
+        width: 100%;
+        text-align: center;
+    }
 }
