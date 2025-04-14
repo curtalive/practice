@@ -96,6 +96,6 @@ mysqli_close($conn);
     </form>
 </div>
 
-<footer>
+
     <?php include('footer.php'); ?>
-</footer>
+

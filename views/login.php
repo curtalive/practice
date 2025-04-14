@@ -34,7 +34,7 @@ mysqli_close($conn);
 <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-    
+<div class="page-wrapper">    
 <div class="container">
     <h2>Авторизация</h2>
         <form class = "login" action="login.php" method="POST">
@@ -57,6 +57,7 @@ mysqli_close($conn);
             </div>
         </form>
 
+</div>
 </div>
     <?php include('footer.php'); ?>
 </body>
