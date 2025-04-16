@@ -38,7 +38,7 @@ $query_update_total = "UPDATE Orders
     SET TotalAmount = (SELECT IFNULL(SUM(Quantity * Price), 0) FROM OrderDetails WHERE OrderID = $order_id) 
     WHERE OrderID = $order_id";
 mysqli_query($conn, $query_update_total);
-
+  
 // Перенаправляем обратно в корзину
 header("Location: cart.php");
 exit;

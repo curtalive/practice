@@ -25,7 +25,7 @@ if (!$order) {
 } else {
     $order_id = $order['OrderID'];
 }
-
+  
 $query_cart = "
     SELECT od.OrderDetailID, p.ProductID, p.ProductName, p.ImageURL, od.Quantity, od.Size, od.Price
     FROM OrderDetails od

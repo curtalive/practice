@@ -19,7 +19,7 @@ session_start(); // Запускаем сессию
     <div class="header-container">
         <!-- Название/Логотип в будущем -->
         <a href="../index.php" class="logo">Loomix</a>
-
+  
         <!-- Поиск -->
         <div class="search-bar">
             <form method="GET" action="catalog.php" class="search-form">

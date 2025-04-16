@@ -9,7 +9,7 @@ $result = mysqli_query($conn, $query);
 <head>
     <link rel="stylesheet" href="../css/styles.css">
 </head>
-
+  
 <div class="products-page">
         <h2>Каталог товаров</h2>
         <div class="products-grid">

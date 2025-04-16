@@ -32,13 +32,13 @@ document.addEventListener("DOMContentLoaded", function () {
     // --- Слайдер отзывов ---
     const reviews = document.querySelectorAll(".review");
     let reviewIndex = 0;
-
+ 
     function showReview(index) {
         reviews.forEach((review, i) => {
             review.style.display = i === index ? "block" : "none";
         });
     }
-
+ 
     function nextReview() {
         reviewIndex = (reviewIndex + 1) % reviews.length;
         showReview(reviewIndex);

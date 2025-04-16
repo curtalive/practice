@@ -235,12 +235,6 @@ footer .footer-container .footer-section .social-icons a:hover {
     display: flex;
     flex-direction: column;
 }
-
-/* Контент растягивается */
-.page-wrapper .container {
-
-}
-
 /* Контейнер социальных иконок */
 .social-icons {
     display: flex;
@@ -717,7 +711,7 @@ form .toggle-link a:hover {
 .products-page button:hover {
     background: #0056b3;
 }
-
+ 
 /* Профиль */
 .profile-container {
     max-width: 800px;

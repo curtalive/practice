@@ -29,7 +29,7 @@ if (!$order) {
 } else {
     $order_id = $order['OrderID'];
 }
-
+  
 $query_check = "SELECT OrderDetailID, Quantity FROM OrderDetails WHERE OrderID = $order_id AND ProductID = $product_id LIMIT 1";
 $result_check = mysqli_query($conn, $query_check);
 $existing_item = mysqli_fetch_assoc($result_check);

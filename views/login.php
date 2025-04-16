@@ -51,7 +51,7 @@ mysqli_close($conn);
             </div>
 
             <button class="login_button" type="submit">Войти</button>
-            
+              
             <div class="toggle-link">
                 <p>Нет аккаунта? <a href="register.php">Зарегистрироваться</a></p>
             </div>

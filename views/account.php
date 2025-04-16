@@ -17,7 +17,7 @@ $user = mysqli_fetch_assoc($result_user);
 $query_orders = "SELECT OrderID, OrderDate, TotalAmount, Status FROM Orders WHERE UserID = $user_id ORDER BY OrderDate DESC LIMIT 5";
 $result_orders = mysqli_query($conn, $query_orders);
 ?>
-
+  
 <head>
     <link rel="stylesheet" href="../css/styles.css">
 </head>

@@ -19,7 +19,7 @@
                 <li><a href="#">Профиль</a></li>
             </ul>
         </div>
-        
+          
         <div class="footer-section">
             <h3>Мы в социальных сетях</h3>
             <div class="social-icons">
