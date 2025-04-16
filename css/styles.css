@@ -178,14 +178,14 @@ footer .footer-container {
 
 /* Секции футера */
 footer .footer-container .footer-section {
-    width: 30%;  /* Все секции на 100% ширины по умолчанию */
+    width: 30%;  
     margin-bottom: 20px;
 }
 
 
 /* Заголовки футера */
 footer .footer-container .footer-section h3 {
-    font-size: 16px;  /* Размер шрифта заголовков */
+    font-size: 16px;  
     font-weight: 600;
     margin-bottom: 15px;
     color: #333;
@@ -199,18 +199,18 @@ footer .footer-container .footer-section ul {
 }
 
 footer .footer-container .footer-section ul li {
-    margin: 8px 0;  /* Расстояние между пунктами */
+    margin: 8px 0;  
 }
 
 footer .footer-container .footer-section ul li a {
     text-decoration: none;
     color: #333;
-    font-size: 13px;  /* Размер шрифта ссылок */
+    font-size: 13px;  
     transition: color 0.3s;
 }
 
 footer .footer-container .footer-section ul li a:hover {
-    color: #007bff;  /* Цвет при наведении */
+    color: #007bff;  
 }
 
 /* Социальные иконки */
@@ -220,18 +220,18 @@ footer .footer-container .footer-section .social-icons {
 }
 
 footer .footer-container .footer-section .social-icons a {
-    font-size: 20px;  /* Размер иконок */
+    font-size: 20px;  
     color: #333;
     transition: color 0.3s;
 }
 
 footer .footer-container .footer-section .social-icons a:hover {
-    color: #007bff;  /* Цвет иконок при наведении */
+    color: #007bff; 
 }
 
 /* Обертка страницы */
 .page-wrapper {
-    min-height: 65%; /* занимает минимум весь экран */
+    min-height: 65%; 
     display: flex;
     flex-direction: column;
 }
